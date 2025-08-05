@@ -3,265 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Gabriel Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="assets/js/main.js"></script>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <title>Portfolio Website | João Gabriel</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left">
-                <a href="#about-section">João Gabriel</a>
+   <div class="container">
+
+    <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav">
+                <p class="nav-name">João G.</p>
+                <!-- <span>.</span> -->
             </div>
-            <div class="right">
-                <a href="#about-section">About</a>
-                <a href="#experience-section">Experience</a>
-                <a href="#projects-section">Projects</a>
-                <a href="#skills-section">Skills</a>
-                <!-- <a href="#leave-message-section">Leave a Message!</a> -->
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-buttom">
+                <a href="docx\curriculojoao.docx" download class="bnt">
+                    Download CV <i class="uil uil-file-alt"></i>
+                </a>
+            </div>
+
+            <div class="nav-menu-bnt">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
             </div>
         </nav>
-    </header>
-    <section id="about-section">
-        <h2>Hey World, I'm João!</h2>
-        <div class="headshot">
-            <picture>
-                <source srcset="img/headphoto.jpg" type="image/jpg">
-                <img src="img/headphoto.jpg" alt="headshot">
-            </picture>
-        </div>
-        <div class="bio">
-            <p>
-                Hey! I'm João, a software development enthusiast.
-                With a background in computer science, I am well equipped with a set of technical skills
-                such as: Python, Javascript, React, Django and more!
-            </p>
-            <br>
-            <!-- <p>
-                Outside of career and academics, I enjoy playing video games, Drawing, watching anime, and plays my instruments!
-            </p> -->
-        </div>
-        <div class="social-links">
-            <a href="https://www.instagram.com/joaogabrielf_31/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <!-- <a href="" target="_blank">
-                <i class="fa-brands fa-square-youtube"></i>
-            </a> -->
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-005aa0265/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Joaogabriel148" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </div>
-    </section>
-    <div class="divider"></div>
-    
-    <section id="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-php"></i>
-            <i class="devicon-django-plain"></i>
-            <i class="devicon-flask-original"></i>
-            <i class="devicon-react-original"></i>
-            <i class="devicon-electron-original"></i>
-            <i class="fa-brands fa-figma"></i>
-            <i class="fa-brands fa-git-alt"></i>
-            <i class="fa-brands fa-github-alt"></i>
-            <i class="fa-solid fa-database"></i>
-        </div>
-    </section>
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wraper">
+        <!-- -------------- FEATURED BOX ---------------- -->
+        <section class="featured-box" id="home">
+            <div class="featred-text">
+                <div class="featured-text-card">
+                    <span>João Gabriel</span>
+                </div>
+                <div class="featured-name">
+                    <p>Im <span class="typedText">Developer</span></p>
+                </div>
+                <div class="featured-text-info">
+                    <p>Experienced web developer with a passion for crreating visually stunning</br>
+                       and user-friendly websites
+                    </p>
+                </div>
+                <div class="featured-text-bnt">
+                    <button class="bnt blue-bnt">Hire Me</button>
+                    <a href="docx/curriculojoao.docx" download class="bnt">
+                        Download CV <i class="uil uil-file-alt"></i>
+                    </a>
+                </div>
+                <div class="social_icons">
+                    <div class="icon"><a href="https://www.instagram.com/joaogabrielf_31/"><i class="uil uil-instagram"></i></a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/joaogabrielf148/"><i class="uil uil-linkedin-alt"></i></a></div>
+                    <!-- <div class="icon"><i class="uil uil-dribbble"></i></div> -->
+                    <div class="icon"><a href="https://github.com/Joaogabriel148"><i class="uil uil-github-alt"></i></a></div>
+                </div>
+            </div>
+            <div class="featured-image">
+                <div class="image">
+                    <img src="\img/inconjoao2.jpg" alt="avatar">
+                </div>
+            </div>
+            <div class="scroll-icon-box">
+                <a href="#about" class="scroll-btn">
+                    <i class="uil uil-mouse-alt"></i>
+                    <p>Scroll Down</p>
+                </a>
+            </div>
 
-    <div class="divider"></div>
-    <section id="projects-section">
-        <h2>Projects</h2>
-    
-        <!-- Software Projects Subsection -->
-        <div class="project-subsection">
-            <h3>Software</h3>
-            <div #swiperRef="" class="swiper card-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="https://github.com/Joaogabriel148/Text-Editor" target="_blank" class="project-box">
-                            <picture>
-                                <source srcset="img/texteditor.png" type="image/png">
-                                <img src="img/texteditor.png" alt="Text-Editor">
-                            </picture>
-                            <h4>Text Editor</h4>
-                            <h5><em>Javascript, React</em></h5>
-                            <p>Is a text editor with a rich-text style</p>
-                        </a>
+        </section>
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>About Me</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="about-info">
+                        <h3>My Introduction</h3>
+                        <p>I am well-versed in Python, PHP and JavaScript, and other cutting edge
+                            fameworks and libraries, which allows me to implement interective features.
+                            Additionally, I have experience working with content management systems.
+                        </p>
+                        <div class="about-btn">
+                            <button class="btn" >Download CV <i class="uil uil-import"></i></button>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://github.com/Joaogabriel148/Shadow-of-Spores" target="_blank" class="project-box">
-                            <picture>
-                                <source srcset="img/shadowofspores.png" type="image/png">
-                                <img src="img/shadowofspores.png" alt="Shadow of Spores">
-                            </picture>
-                            <h4>Shadow Of Spores</h4>
-                            <h5><em>Gamemaker Language</em></h5>
-                            <p>Shadow of spores is a metroidvania game made on the gamemaker engine</p>
-                        </a>
+                </div>
+                <div class="col">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript<i class="fa-brands fa-js"></i></span>
+                            <span>React<i class="devicon-react-original"></i></span>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://github.com/Joaogabriel148/Notes-App" target="_blank" class="project-box">
-                            <picture>
-                                <source srcset="img/notesapp.png" type="image/png">
-                                <img src="img/notesapp.png" alt="Notes App">
-                            </picture>
-                            <h4>Notes App</h4>
-                            <h5><em>Javascript, React</em></h5>
-                            <p>Is a note-taking app where you can: save, edit and delete notes</p>
-                        </a>
+
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>BackEnd</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>Python <i class="fa-brands fa-python"></i></span>
+                            <span>PHP <i class="fa-brands fa-php"></i></span>
+                            <span>Node.js</span>
+                            <span>Django  <i class="devicon-django-plain"></i></span>
+                            <span>Flask <i class="devicon-flask-original"></i></span>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://github.com/Joaogabriel148/ToDoList" target="_blank" class="project-box">
-                            <picture>
-                                <source srcset="img\Todolist.png" type="image/png">
-                                <img src="img\Todolist.png" alt="To do list">
-                            </picture>
-                            <h4>To Do List</h4>
-                            <h5><em>Python, Tkinter</em></h5>
-                            <p>A simple to-do list using python and the graphical library: Tkinter.</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://github.com/Joaogabriel148/Compiler" target="_blank" class="project-box">  <!-- github link -->
-                            <picture>
-                                <source srcset="img/compiler.png" type="image/png">
-                                <img src="img/compiler.png" alt="Compiler">
-                            </picture>
-                            <h4>Simple Code Compiler</h4>
-                            <h5><em>Python, Tkinter</em></h5>
-                            <p>A simple code compiler using python and Tkinter graphical library.</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://github.com/Joaogabriel148/Voxacess_" target="_blank" class="project-box">  <!-- github link -->
-                            <picture>
-                                <source srcset="img/voxacess.png" type="image/png">
-                                <img src="img/voxacess.png" alt="Compiler">
-                            </picture>
-                            <h4>Simple Virtual Assistant</h4>
-                            <h5><em>Python, Tkinter</em></h5>
-                            <p>virtual assistant with voice commands</p>
-                        </a>
+
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Anothers</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>MySQL</span>
+                            <span>PostegreSQL</span>
+                            <span>SQlite</span>
+                            <span>Git <i class="fa-brands fa-git-alt"></i></span>
+                            <span>GitHub <i class="fa-brands fa-github-alt"></i></span>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <!-- Design Projects Subsection -->
-        <!-- <div class="project-subsection">
-            <h3>Design</h3>
-                <div #swiperRef="" class="swiper card-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="https://hibinolab.com/" target="_blank" class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/tissue-patch-1.webp" type="image/webp">
-                                    <img src="images/tissue-patch-1.png" alt="Tissue Patch">
-                                </picture>
-                                <h4>3D Bioprinted Mold</h4>
-                                <h5><em>OnShape, Lumen X Bioprinter</em></h5>
-                                <p>Designed a mold for research lap to reduce cell usage while maintaining tissue patch functionality.</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.figma.com/file/LbgAdL6kVLjecPz1XYQLRs/12weekyear?type=design&node-id=0-1&mode=design&t=NSBiFfataJC4wMu8-0\" target="_blank" class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/twelve-week-year.webp" type="image/webp">
-                                    <img src="images/twelve-week-year.png" alt="12 Week Year">
-                                </picture>
-                                <h4>12 Week Year</h4>
-                                <h5><em>Figma</em></h5>
-                                <p>I created a prototype for a mobile self improvement application based on principles from the book <em>12 week year</em>.</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.figma.com/design/dgGOVpe334IiQeQ48oHi7n/Course-Registration?node-id=0-1&p=f&t=1DJRWMw4xOXlk2TY-0" target="_blank" class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/mpcs-redesign.webp" type="image/webp">
-                                    <img src="images/mpcs-redesign.png" alt="MPCS Redesign">
-                                </picture>
-                                <h4>MPCS Redesign</h4>
-                                <h5><em>Figma</em></h5>
-                                <p>I redesigned the website to make it simpler and more enjoyable to use.</p>
-                            </a>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                            <a href="https://youtu.be/9gVfe0mJjMQ" target=_blank class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/wasted-ocean-1.webp" type="image/webp">
-                                    <img src="images/wasted-ocean-1.png" alt="Wasted Ocean Mural">
-                                </picture>
-                                <h4>Wasted Ocean</h4>
-                                <h5><em>Final Cut Pro X</em></h5>
-                                <p>I spearheaded the installation of <em>Wasted Ocean</em>, a mural of ocean life made entirely from student waste.</p>
-                            </a>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                            <a href="https://www.figma.com/design/ldmrdlXEzcKOQCGWQD9hzG/Assignment-5---Native-App-with-Retention?node-id=0-1&p=f&t=SH0RlarLtnl9onec-0" target="_blank" class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/job-seaerch-design.webp" type="image/webp">
-                                    <img src="images/job-seaerch-design.png" alt="Job Search App">
-                                </picture>
-                                <h4>Job Search App</h4>
-                                <h5><em>Figma</em></h5>
-                                <p>I designed a simple native job search iOS app targeted towards new grads.</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.figma.com/design/ugfzGq3DAgZKZX5YzDI2vE/RecipeWebsite?node-id=0-1&p=f&t=aRh6L1fb70qqi10w-0" target="_blank" class="project-box">
-                                <picture>
-                                    <source srcset="images/webp/lunisolar.webp" type="image/webp">
-                                    <img src="images/lunisolar.png" alt="Lunisolar">
-                                </picture>
-                                <h4>Lunisolar</h4>
-                                <h5><em>Figma</em></h5>
-                                <p>I designed a simple recipe website page inspired by the Lunar New Year.</p>
-                            </a>
-                        </div>
+        </section>
+       <!-- -------------- PROJECT BOX ---------------- -->
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1>Projects</h1>
+            </div>
+
+            <div class="project-container">
+
+                <div class="project-box">
+                    <a href="https://github.com/Joaogabriel148/Compiler">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                        </svg>
+                        <h3>Simple Compiler</h3>
+                        <label>A simple code compiler using python and Tkinter </br> graphical library.</label>
+                    </a>
+                </div>
+
+                <div class="project-box">
+                    <a href="https://github.com/Joaogabriel148/Text-Editor">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-type" viewBox="0 0 16 16">
+                            <path d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081zm2.7-7.923L6.34 9.314H3.51l1.4-4.156zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525"/>
+                        </svg>
+                        <h3>Text Editor</h3>
+                        <label>Is a text editor with a rich-text style</label>
+                    </a>
+                </div>
+
+                <div class="project-box">
+                    <a href="https://github.com/Joaogabriel148/Voxacess_">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z"/>
+                            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        <h3>Voice Command app</h3>
+                        <label>A simple voice app with commands using python</label>
+                    </a>
+                    
+                </div>
+
+                <div class="project-box">
+                    <!-- <i class="uil uil-award"></i>
+                    <h3>Completed</h3>
+                    <label>7+ years in the field</label> -->
+                </div>
+
+                <div class="project-box">
+                    <!-- <i class="uil uil-award"></i>
+                    <h3>Completed</h3>
+                    <label>7+ years in the field</label> -->
+                </div>
+
+                <div class="project-box">
+                    <!-- <i class="uil uil-award"></i>
+                    <h3>Completed</h3>
+                    <label>7+ years in the field</label> -->
+                </div>
+            </div>
+        </section>
+       <!-- -------------- CONTACT BOX ---------------- -->
+        <section class="section" id="contact">
+            <!-- <div class="top-header">
+                <h1>Get in touch</h1>
+                <span>Do you have a project in your mind, contact me here</span>
+            </div> -->
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Find me <i class="uil uil-arrow-down"></i></h2>
+                        <p><i class="uil uil-envelope"></i> Email: joaogabrilf124@gmail.com</p>
+                        <p><i class="uil uil-phone"></i> Tel:(82)99982-4013</p>
                     </div>
                 </div>
-        </div> -->
-    </section>
-    
-    <div class="divider"></div>
-    <!-- <section id="leave-message-section">
-        <h2>Leave a Message!</h2>
-        <p>coming soon :)</p>
-    </section> -->
+                <!-- <div class="col">
+                    <div class="form-control">
+                        <div class="forms-inputs">
+                            <input type="text" class="input-field" placeholder="Name">
+                            <input type="text" class="input-field" placeholder="Email">
+                        </div>
+                        <div class="text-area">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button class="btn">Send<i class="uil uil-message"></i></button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>João G.</p>
+            </div>
 
-    <!-- Swiper JS -->
-    <footer>
-        <p>&copy; <span id="year"></span> João Gabriel. All Rights Reserved.</p>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Automatically update the copyright year
-            document.getElementById('year').textContent = new Date().getFullYear();
-    
-            // Initialize Swiper
-            const swiper = new Swiper(".card-swiper", {
-                centeredSlides: false,
-                spaceBetween: 0,
-                slidesPerView: 'auto'
-            });
-        });
-    </script>
-  </body>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer-menu-list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer-menu-list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer-menu-list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer-menu-list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-social-icons">
+                <div class="icon"><a href="https://www.instagram.com/joaogabrielf_31/"><i class="uil uil-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/joaogabrielf148/"><i class="uil uil-linkedin-alt"></i></a></div>
+                <!-- <div class="icon"><i class="uil uil-dribbble"></i></div> -->
+                <div class="icon"><a href="https://github.com/Joaogabriel148"><i class="uil uil-github-alt"></i></a></div>
+            </div>
+
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">João G.</a> - All rights reserved</p>
+            </div>
+        </footer>
+    </main>
+
+   </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+   	<!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+	<!-- ----- MAIN JS ----- -->
+</body>
 </html>
